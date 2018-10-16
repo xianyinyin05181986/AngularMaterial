@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="HealthModelObject_DetailView">
+      <Items>
+        <ActionContainerViewItem Id="Aha" ActionContainer="Item" Caption="Aha Aha" IsNewNode="True" />
+        <StateViewItem Id="State" IsNewNode="True" />
+        <StaticViewItem Id="Static Content" Caption="Static Content" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SizeableEditors" RelativeSize="100" Caption="Log Infomation">
+            <LayoutItem Id="State" ViewItem="State" Index="0" RelativeSize="6.4386317907444672" IsNewNode="True" />
+            <LayoutGroup Id="Auto7ba0863b-ffb7-450f-955d-a15b3b756cfc" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="5.6338028169014081" IsNewNode="True">
+              <LayoutItem Id="Aha" ViewItem="Aha" Index="0" RelativeSize="27.74294670846395" IsNewNode="True" />
+              <LayoutItem Id="Static Content" ViewItem="Static Content" Index="1" RelativeSize="72.257053291536053" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="LogInfomation" Index="2" RelativeSize="87.927565392354126" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="JobSettingDemo_DetailView">
+      <Items>
+        <StaticViewItem Id="AnotherStaticViewItem" Caption="Another Static ViewItem" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" Caption="Main">
+          <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="6.4386317907444672" IsNewNode="True" />
+          <LayoutItem Id="AnotherStaticViewItem" ViewItem="AnotherStaticViewItem" Index="1" RelativeSize="93.561368209255534" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
