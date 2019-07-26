@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { $ } from 'protractor';
+import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -71,5 +72,9 @@ export class EmployeeService {
       hireDate: employee.hireDate,
       isPermanent: employee.isPermanent
     });
+  }
+
+  populateEmployee(employee){
+    this.form.setValue(_.omit(employee,'departmentName'));
   }
 }

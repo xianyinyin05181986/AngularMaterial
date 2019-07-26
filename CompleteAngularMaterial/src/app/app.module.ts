@@ -14,13 +14,15 @@ import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { environment } from '../environments/environment'
 import { DepartmentService } from './shared/department.service';
 import { EmpolyeeListComponent } from './empolyees/empolyee-list/empolyee-list.component';
+import { MatConfirmDialogComponent } from './mat-confirm-dialog/mat-confirm-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     EmployeesComponent,
-    EmpolyeeListComponent
+    EmpolyeeListComponent,
+    MatConfirmDialogComponent
 
   ],
   imports: [
@@ -34,6 +36,7 @@ import { EmpolyeeListComponent } from './empolyees/empolyee-list/empolyee-list.c
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [EmployeeService,DepartmentService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [EmployeeComponent, MatConfirmDialogComponent]
 })
 export class AppModule { }
